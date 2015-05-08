@@ -1,65 +1,74 @@
-HOME
-
 <div style="position:relative; top:200px; left:200px;">
 	<div id = "div-calles" style="position:absolute;">
-		<%= image_tag 'calles/Calle.png', id: "imagen-calle" %>
+		<%= image_tag 'calles/Calle1.png', id: "imagen-calle" %>
 	</div>
 	<div id = "div-banquetas" style="position:absolute;">
-		<%= image_tag 'banquetas/Banqueta.png', id: "imagen-banqueta" %>
+		<%= image_tag 'banquetas/Banqueta1.png', id: "imagen-banqueta" %>
 	</div>
 	<div id = "div-iluminaciones" style="position:absolute;">
-		<%= image_tag 'iluminaciones/Illuminacion.png', id: "imagen-iluminacion" %>
+		<%= image_tag 'iluminaciones/Iluminacion1.png', id: "imagen-iluminacion" %>
 	</div>
 	<div id = "div-mobiliarios" style="position:absolute;">
-		<%= image_tag 'mobiliarios/Mobiliario.png', id: "imagen-mobiliario" %>
+		<%= image_tag 'mobiliarios/Mobiliario1.png', id: "imagen-mobiliario" %>
 	</div>
 	<div id = "div-peatones" style="position:absolute;">
-		<%= image_tag 'peatones/Peatones.png', id: "imagen-peatones" %>
+		<%= image_tag 'peatones/Peatones1.png', id: "imagen-peatones" %>
 	</div>
 	<div id = "div-arboles" style="position:absolute;">
-		<%= image_tag 'arboles/Arboles.png', id: "imagen-arboles" %>
+		<%= image_tag 'arboles/Arboles1.png', id: "imagen-arboles" %>
 	</div>
 </div>
 
 <div>
 	<ul>
 		<li><%= radio_button_tag 'arboles', 'none', false, onclick: "desaparece_arboles();" %><%= label_tag "None" %></li>
-		<li><%= radio_button_tag 'arboles', '1', true, onclick: "cambia_arbol_1();" %><%= label_tag "Arbol1" %></li>
+		<li><%= radio_button_tag 'arboles', '1', true, onclick: "cambia_arbol();", data: {src: "#{asset_path('arboles/Arboles1.png')}"} %><%= label_tag "Arbol1" %></li>
+		<li><%= radio_button_tag 'arboles', '2', false, onclick: "cambia_arbol();", data: {src: "#{asset_path('arboles/Arboles2.png')}"} %><%= label_tag "Arbol2" %></li>
+		<li><%= radio_button_tag 'arboles', '3', false, onclick: "cambia_arbol();", data: {src: "#{asset_path('arboles/Arboles3.png')}"} %><%= label_tag "Arbol3" %></li>
+		<li><%= radio_button_tag 'arboles', '4', false, onclick: "cambia_arbol();", data: {src: "#{asset_path('arboles/Arboles4.png')}"} %><%= label_tag "Arbol4" %></li>
+		<li><%= radio_button_tag 'arboles', '5', false, onclick: "cambia_arbol();", data: {src: "#{asset_path('arboles/Arboles5.png')}"} %><%= label_tag "Arbol5" %></li>
+		<li><%= radio_button_tag 'arboles', '6', false, onclick: "cambia_arbol();", data: {src: "#{asset_path('arboles/Arboles6.png')}"} %><%= label_tag "Arbol6" %></li>
 	</ul>
 </div>
 
 <div>
 	<ul>
 		<li><%= radio_button_tag 'banquetas', 'none', false, onclick: "desaparece_banquetas();" %><%= label_tag "None" %></li>
-		<li><%= radio_button_tag 'banquetas', '1', true, onclick: "cambia_banqueta_1();" %><%= label_tag "Banqueta1" %></li>
+		<li><%= radio_button_tag 'banquetas', '1', true, onclick: "cambia_banqueta();", data: {src: "#{asset_path('banquetas/Banqueta1.png')}"} %><%= label_tag "Banqueta1" %></li>
+		<li><%= radio_button_tag 'banquetas', '2', false, onclick: "cambia_banqueta();", data: {src: "#{asset_path('banquetas/Banqueta2.png')}"} %><%= label_tag "Banqueta2" %></li>
+		<li><%= radio_button_tag 'banquetas', '3', false, onclick: "cambia_banqueta();", data: {src: "#{asset_path('banquetas/Banqueta3.png')}"} %><%= label_tag "Banqueta3" %></li>
+		<li><%= radio_button_tag 'banquetas', '4', false, onclick: "cambia_banqueta();", data: {src: "#{asset_path('banquetas/Banqueta4.png')}"} %><%= label_tag "Banqueta4" %></li>
+		<li><%= radio_button_tag 'banquetas', '5', false, onclick: "cambia_banqueta();", data: {src: "#{asset_path('banquetas/Banqueta5.png')}"} %><%= label_tag "Banqueta5" %></li>
+		<li><%= radio_button_tag 'banquetas', '6', false, onclick: "cambia_banqueta();", data: {src: "#{asset_path('banquetas/Banqueta6.png')}"} %><%= label_tag "Banqueta6" %></li>
 	</ul>
 </div>
 
 <div>
 	<ul>
 		<li><%= radio_button_tag 'calles', 'none', false, onclick: "desaparece_calles();" %><%= label_tag "None" %></li>
-		<li><%= radio_button_tag 'calles', '1', true, onclick: "cambia_calle_1();" %><%= label_tag "Calle1" %></li>
+		<li><%= radio_button_tag 'calles', '1', true, onclick: "cambia_calle();", data: {src: "#{asset_path('calles/Calle1.png')}"} %><%= label_tag "Calle1" %></li>
+		<li><%= radio_button_tag 'calles', '2', false, onclick: "cambia_calle();", data: {src: "#{asset_path('calles/Calle2.png')}"} %><%= label_tag "Calle2" %></li>
 	</ul>
 </div>
 
 <div>
 	<ul>
 		<li><%= radio_button_tag 'iluminaciones', 'none', false, onclick: "desaparece_iluminaciones();" %><%= label_tag "None" %></li>
-		<li><%= radio_button_tag 'iluminaciones', '1', true, onclick: "cambia_iluminacion_1();" %><%= label_tag "Iluminacion1" %></li>
+		<li><%= radio_button_tag 'iluminaciones', '1', true, onclick: "cambia_iluminacion();", data: {src: "#{asset_path('iluminaciones/Iluminacion1.png')}"} %><%= label_tag "Iluminacion1" %></li>
 	</ul>
 </div>
 
 <div>
 	<ul>
 		<li><%= radio_button_tag 'mobiliarios', 'none', false, onclick: "desaparece_mobiliarios();" %><%= label_tag "None" %></li>
-		<li><%= radio_button_tag 'mobiliarios', '1', true, onclick: "cambia_mobiliario_1();" %><%= label_tag "Mobiliario1" %></li>
+		<li><%= radio_button_tag 'mobiliarios', '1', true, onclick: "cambia_mobiliario();", data: {src: "#{asset_path('mobiliarios/Mobiliario1.png')}"} %><%= label_tag "Mobiliario1" %></li>
 	</ul>
 </div>
 
 <div>
 	<ul>
 		<li><%= radio_button_tag 'peatones', 'none', false, onclick: "desaparece_peatones();" %><%= label_tag "None" %></li>
-		<li><%= radio_button_tag 'peatones', '1', true, onclick: "cambia_peaton_1();" %><%= label_tag "Peaton1" %></li>
+		<li><%= radio_button_tag 'peatones', '1', true, onclick: "cambia_peaton();", data: {src: "#{asset_path('peatones/Peatones1.png')}"} %><%= label_tag "Peaton1" %></li>
 	</ul>
 </div>
 
@@ -94,33 +103,45 @@ HOME
 		document.getElementById('div-peatones').style.display = "none";
 	}
 
-	function cambia_arbol_1(){
+	function cambia_arbol(){
+		var arbol = jQuery( 'input[name=arboles]:checked' ).data("src");
+
 		document.getElementById('div-arboles').style.display = "block";
-		document.getElementById('imagen-arboles').src = "<%= asset_path('arboles/Arboles.png') %>";
+		document.getElementById('imagen-arboles').src = arbol;
 	}
 
-	function cambia_calle_1(){
+	function cambia_calle(){
+		var calle = jQuery( 'input[name=calles]:checked' ).data("src");
+
 		document.getElementById('div-calles').style.display = "block";
-		document.getElementById('imagen-calles').src = "<%= asset_path('calles/Calle.png') %>";
+		document.getElementById('imagen-calles').src = calle;
 	}
 
-	function cambia_banqueta_1(){
+	function cambia_banqueta(){
+		var banqueta = jQuery( 'input[name=banquetas]:checked' ).data("src");
+
 		document.getElementById('div-banquetas').style.display = "block";
-		document.getElementById('imagen-banquetas').src = "<%= asset_path('banquetas/Banqueta.png') %>";
+		document.getElementById('imagen-banquetas').src = banqueta;
 	}
 
-	function cambia_iluminacion_1(){
+	function cambia_iluminacion(){
+		var iluminacion = jQuery( 'input[name=iluminaciones]:checked' ).data("src");
+
 		document.getElementById('div-iluminaciones').style.display = "block";
-		document.getElementById('imagen-iluminaciones').src = "<%= asset_path('iluminaciones/Illuminacion.png') %>";
+		document.getElementById('imagen-iluminaciones').src = iluminacion;
 	}
 
-	function cambia_mobiliario_1(){
+	function cambia_mobiliario(){
+		var mobiliario = jQuery( 'input[name=mobiliarios]:checked' ).data("src");
+
 		document.getElementById('div-mobiliarios').style.display = "block";
-		document.getElementById('imagen-mobiliarios').src = "<%= asset_path('mobiliarios/Mobiliario.png') %>";
+		document.getElementById('imagen-mobiliarios').src = mobiliario;
 	}
 
-	function cambia_peaton_1(){
+	function cambia_peaton(){
+		var peaton = jQuery( 'input[name=peatones]:checked' ).data("src");
+
 		document.getElementById('div-peatones').style.display = "block";
-		document.getElementById('imagen-peatones').src = "<%= asset_path('peatones/Peatones.png') %>";
+		document.getElementById('imagen-peatones').src = peaton;
 	}
 </script>
