@@ -1,0 +1,126 @@
+HOME
+
+<div style="position:relative; top:200px; left:200px;">
+	<div id = "div-calles" style="position:absolute;">
+		<%= image_tag 'calles/Calle.png', id: "imagen-calle" %>
+	</div>
+	<div id = "div-banquetas" style="position:absolute;">
+		<%= image_tag 'banquetas/Banqueta.png', id: "imagen-banqueta" %>
+	</div>
+	<div id = "div-iluminaciones" style="position:absolute;">
+		<%= image_tag 'iluminaciones/Illuminacion.png', id: "imagen-iluminacion" %>
+	</div>
+	<div id = "div-mobiliarios" style="position:absolute;">
+		<%= image_tag 'mobiliarios/Mobiliario.png', id: "imagen-mobiliario" %>
+	</div>
+	<div id = "div-peatones" style="position:absolute;">
+		<%= image_tag 'peatones/Peatones.png', id: "imagen-peatones" %>
+	</div>
+	<div id = "div-arboles" style="position:absolute;">
+		<%= image_tag 'arboles/Arboles.png', id: "imagen-arboles" %>
+	</div>
+</div>
+
+<div>
+	<ul>
+		<li><%= radio_button_tag 'arboles', 'none', false, onclick: "desaparece_arboles();" %><%= label_tag "None" %></li>
+		<li><%= radio_button_tag 'arboles', '1', true, onclick: "cambia_arbol_1();" %><%= label_tag "Arbol1" %></li>
+	</ul>
+</div>
+
+<div>
+	<ul>
+		<li><%= radio_button_tag 'banquetas', 'none', false, onclick: "desaparece_banquetas();" %><%= label_tag "None" %></li>
+		<li><%= radio_button_tag 'banquetas', '1', true, onclick: "cambia_banqueta_1();" %><%= label_tag "Banqueta1" %></li>
+	</ul>
+</div>
+
+<div>
+	<ul>
+		<li><%= radio_button_tag 'calles', 'none', false, onclick: "desaparece_calles();" %><%= label_tag "None" %></li>
+		<li><%= radio_button_tag 'calles', '1', true, onclick: "cambia_calle_1();" %><%= label_tag "Calle1" %></li>
+	</ul>
+</div>
+
+<div>
+	<ul>
+		<li><%= radio_button_tag 'iluminaciones', 'none', false, onclick: "desaparece_iluminaciones();" %><%= label_tag "None" %></li>
+		<li><%= radio_button_tag 'iluminaciones', '1', true, onclick: "cambia_iluminacion_1();" %><%= label_tag "Iluminacion1" %></li>
+	</ul>
+</div>
+
+<div>
+	<ul>
+		<li><%= radio_button_tag 'mobiliarios', 'none', false, onclick: "desaparece_mobiliarios();" %><%= label_tag "None" %></li>
+		<li><%= radio_button_tag 'mobiliarios', '1', true, onclick: "cambia_mobiliario_1();" %><%= label_tag "Mobiliario1" %></li>
+	</ul>
+</div>
+
+<div>
+	<ul>
+		<li><%= radio_button_tag 'peatones', 'none', false, onclick: "desaparece_peatones();" %><%= label_tag "None" %></li>
+		<li><%= radio_button_tag 'peatones', '1', true, onclick: "cambia_peaton_1();" %><%= label_tag "Peaton1" %></li>
+	</ul>
+</div>
+
+<script>
+	function desaparece_calles(){
+		//alert("desaparece calles");
+		document.getElementById('div-calles').style.display = "none";
+	}
+
+	function desaparece_arboles(){
+		//alert("desaparece arboles");
+		document.getElementById('div-arboles').style.display = "none";
+	}
+
+	function desaparece_banquetas(){
+		//alert("desaparece banquetas");
+		document.getElementById('div-banquetas').style.display = "none";
+	}
+
+	function desaparece_iluminaciones(){
+		//alert("desaparece iluminaciones");
+		document.getElementById('div-iluminaciones').style.display = "none";
+	}
+
+	function desaparece_mobiliarios(){
+		//alert("desaparece mobiliarios");
+		document.getElementById('div-mobiliarios').style.display = "none";
+	}
+
+	function desaparece_peatones(){
+		//alert("desaparece peatones");
+		document.getElementById('div-peatones').style.display = "none";
+	}
+
+	function cambia_arbol_1(){
+		document.getElementById('div-arboles').style.display = "block";
+		document.getElementById('imagen-arboles').src = "<%= asset_path('arboles/Arboles.png') %>";
+	}
+
+	function cambia_calle_1(){
+		document.getElementById('div-calles').style.display = "block";
+		document.getElementById('imagen-calles').src = "<%= asset_path('calles/Calle.png') %>";
+	}
+
+	function cambia_banqueta_1(){
+		document.getElementById('div-banquetas').style.display = "block";
+		document.getElementById('imagen-banquetas').src = "<%= asset_path('banquetas/Banqueta.png') %>";
+	}
+
+	function cambia_iluminacion_1(){
+		document.getElementById('div-iluminaciones').style.display = "block";
+		document.getElementById('imagen-iluminaciones').src = "<%= asset_path('iluminaciones/Illuminacion.png') %>";
+	}
+
+	function cambia_mobiliario_1(){
+		document.getElementById('div-mobiliarios').style.display = "block";
+		document.getElementById('imagen-mobiliarios').src = "<%= asset_path('mobiliarios/Mobiliario.png') %>";
+	}
+
+	function cambia_peaton_1(){
+		document.getElementById('div-peatones').style.display = "block";
+		document.getElementById('imagen-peatones').src = "<%= asset_path('peatones/Peatones.png') %>";
+	}
+</script>
