@@ -1,4 +1,123 @@
-<div style="position:relative; top:200px; left:200px;">
+<div>
+	<nav class = "navbar-fixed-top estilo-navbar" role = "navigation">
+		<div class = "container">
+			
+			<div class = "navbar-header">
+				
+				<button type="button" class="navbar-toggle buttontoggle col-lg-12 col-md-12 col-sm-12" data-toggle="collapse" data-target="">
+        			<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+      			</button>
+			
+				<div class = "navbar-brand">
+					PEF
+				</div>
+			</div>
+
+
+			<div class = "navbar-principal-collapsed collapse navbar-collapse" id = "menubuttons">
+				<ul class = "navbar-right">
+					<li class = "botonprincipal"><a class = "link-menuprincipal" data-scroll href="#Proyecto">PROYECTO</a></li>
+					<li class = "botonprincipal"><a class = "link-menuprincipal" data-scroll href="#Planmaestro">PLAN MAESTRO</a></li>
+					<li class = "botonprincipal"><a class = "link-menuprincipal" data-scroll href="#Catalogo">CATÁLOGO</a></li>
+					<li class = "botonprincipal"><a class = "link-menuprincipal" data-scroll href="#Equipo">EQUIPO</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+</div>
+
+<div class="col-sm-offset-10 col-sm-2" style = "z-index:1; margin-top: 200px;">
+    <div class="sidebar-nav-fixed pull-right affix">
+            <ul class="nav">
+                <li class="nav-header">Sidebar</li>
+				<div class="dropdown">
+				  <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+				    Árboles
+				    <span class="caret"></span>
+				  </a>
+
+				  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				    <li id = "arboles-none" class= "boton-desaparece" data-target="arboles">None</li>
+				    <li class="boton-arboles activado" data-src="<%= asset_path('arboles/Arboles1.png') %>">Arbol1</li>
+				    <li class="boton-arboles" data-src="<%= asset_path('arboles/Arboles2.png') %>">Arbol2</li>
+				    <li class="boton-arboles" data-src="<%= asset_path('arboles/Arboles3.png') %>">Arbol3</li>
+				    <li class="boton-arboles" data-src="<%= asset_path('arboles/Arboles4.png') %>">Arbol4</li>
+				    <li class="boton-arboles" data-src="<%= asset_path('arboles/Arboles5.png') %>">Arbol5</li>
+				    <li class="boton-arboles" data-src="<%= asset_path('arboles/Arboles6.png') %>">Arbol6</li>
+				  </ul>
+				</div>
+				<div class="dropdown">
+				  <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+				    Banquetas
+				    <span class="caret"></span>
+				  </a>
+
+				  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				    <li id = "banquetas-none" class= "boton-desaparece" data-target="banquetas">None</li>
+				    <li class="boton-banquetas activado" data-src="<%= asset_path('banquetas/Banqueta1.png') %>">Banqueta1</li>
+				    <li class="boton-banquetas" data-src="<%= asset_path('banquetas/Banqueta2.png') %>">Banqueta2</li>
+				    <li class="boton-banquetas" data-src="<%= asset_path('banquetas/Banqueta3.png') %>">Banqueta3</li>
+				    <li class="boton-banquetas" data-src="<%= asset_path('banquetas/Banqueta4.png') %>">Banqueta4</li>
+				    <li class="boton-banquetas" data-src="<%= asset_path('banquetas/Banqueta5.png') %>">Banqueta5</li>
+				    <li class="boton-banquetas" data-src="<%= asset_path('banquetas/Banqueta6.png') %>">Banqueta6</li>
+				  </ul>
+				</div>
+				<div class="dropdown">
+				  <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+				    Calles
+				    <span class="caret"></span>
+				  </a>
+
+				  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				    <li id = "calles-none" class= "boton-desaparece" data-target="calles">None</li>
+				    <li class="boton-calles activado" data-src="<%= asset_path('calles/Calle1.png') %>">Calle1</li>
+				    <li class="boton-calles" data-src="<%= asset_path('calles/Calle2.png') %>">Calle2</li>
+				  </ul>
+				</div>
+				<div class="dropdown">
+				  <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+				    Iluminación
+				    <span class="caret"></span>
+				  </a>
+
+				  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				    <li id = "iluminaciones-none" class= "boton-desaparece" data-target="iluminaciones">None</li>
+				    <li class="boton-iluminaciones activado" data-src="<%= asset_path('iluminaciones/Iluminacion1.png') %>">Iluminacion1</li>
+				  </ul>
+				</div>
+				<div class="dropdown">
+				  <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+				    Mobiliario
+				    <span class="caret"></span>
+				  </a>
+
+				  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				    <li id = "mobiliarios-none" class= "boton-desaparece" data-target="mobiliarios">None</li>
+				    <li class="boton-mobiliarios activado" data-src="<%= asset_path('mobiliarios/Mobiliario1.png') %>">Mobiliario1</li>
+				  </ul>
+				</div>
+				<div class="dropdown">
+				  <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+				    Peatones
+				    <span class="caret"></span>
+				  </a>
+
+				  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				    <li id = "peatones-none" class= "boton-desaparece" data-target="peatones">None</li>
+				    <li class="boton-peatones activado" data-src="<%= asset_path('peatones/Peatones1.png') %>">Peaton1</li>
+				  </ul>
+				</div>
+            </ul>
+        <!--/.well -->
+    </div>
+    <!--/sidebar-nav-fixed -->
+</div>
+
+
+<div style="position:relative;">
 	<div id = "div-calles" style="position:absolute;">
 		<%= image_tag 'calles/Calle1.png', id: "imagen-calle" %>
 	</div>
@@ -19,129 +138,85 @@
 	</div>
 </div>
 
-<div>
-	<ul>
-		<li><%= radio_button_tag 'arboles', 'none', false, onclick: "desaparece_arboles();" %><%= label_tag "None" %></li>
-		<li><%= radio_button_tag 'arboles', '1', true, onclick: "cambia_arbol();", data: {src: "#{asset_path('arboles/Arboles1.png')}"} %><%= label_tag "Arbol1" %></li>
-		<li><%= radio_button_tag 'arboles', '2', false, onclick: "cambia_arbol();", data: {src: "#{asset_path('arboles/Arboles2.png')}"} %><%= label_tag "Arbol2" %></li>
-		<li><%= radio_button_tag 'arboles', '3', false, onclick: "cambia_arbol();", data: {src: "#{asset_path('arboles/Arboles3.png')}"} %><%= label_tag "Arbol3" %></li>
-		<li><%= radio_button_tag 'arboles', '4', false, onclick: "cambia_arbol();", data: {src: "#{asset_path('arboles/Arboles4.png')}"} %><%= label_tag "Arbol4" %></li>
-		<li><%= radio_button_tag 'arboles', '5', false, onclick: "cambia_arbol();", data: {src: "#{asset_path('arboles/Arboles5.png')}"} %><%= label_tag "Arbol5" %></li>
-		<li><%= radio_button_tag 'arboles', '6', false, onclick: "cambia_arbol();", data: {src: "#{asset_path('arboles/Arboles6.png')}"} %><%= label_tag "Arbol6" %></li>
-	</ul>
-</div>
-
-<div>
-	<ul>
-		<li><%= radio_button_tag 'banquetas', 'none', false, onclick: "desaparece_banquetas();" %><%= label_tag "None" %></li>
-		<li><%= radio_button_tag 'banquetas', '1', true, onclick: "cambia_banqueta();", data: {src: "#{asset_path('banquetas/Banqueta1.png')}"} %><%= label_tag "Banqueta1" %></li>
-		<li><%= radio_button_tag 'banquetas', '2', false, onclick: "cambia_banqueta();", data: {src: "#{asset_path('banquetas/Banqueta2.png')}"} %><%= label_tag "Banqueta2" %></li>
-		<li><%= radio_button_tag 'banquetas', '3', false, onclick: "cambia_banqueta();", data: {src: "#{asset_path('banquetas/Banqueta3.png')}"} %><%= label_tag "Banqueta3" %></li>
-		<li><%= radio_button_tag 'banquetas', '4', false, onclick: "cambia_banqueta();", data: {src: "#{asset_path('banquetas/Banqueta4.png')}"} %><%= label_tag "Banqueta4" %></li>
-		<li><%= radio_button_tag 'banquetas', '5', false, onclick: "cambia_banqueta();", data: {src: "#{asset_path('banquetas/Banqueta5.png')}"} %><%= label_tag "Banqueta5" %></li>
-		<li><%= radio_button_tag 'banquetas', '6', false, onclick: "cambia_banqueta();", data: {src: "#{asset_path('banquetas/Banqueta6.png')}"} %><%= label_tag "Banqueta6" %></li>
-	</ul>
-</div>
-
-<div>
-	<ul>
-		<li><%= radio_button_tag 'calles', 'none', false, onclick: "desaparece_calles();" %><%= label_tag "None" %></li>
-		<li><%= radio_button_tag 'calles', '1', true, onclick: "cambia_calle();", data: {src: "#{asset_path('calles/Calle1.png')}"} %><%= label_tag "Calle1" %></li>
-		<li><%= radio_button_tag 'calles', '2', false, onclick: "cambia_calle();", data: {src: "#{asset_path('calles/Calle2.png')}"} %><%= label_tag "Calle2" %></li>
-	</ul>
-</div>
-
-<div>
-	<ul>
-		<li><%= radio_button_tag 'iluminaciones', 'none', false, onclick: "desaparece_iluminaciones();" %><%= label_tag "None" %></li>
-		<li><%= radio_button_tag 'iluminaciones', '1', true, onclick: "cambia_iluminacion();", data: {src: "#{asset_path('iluminaciones/Iluminacion1.png')}"} %><%= label_tag "Iluminacion1" %></li>
-	</ul>
-</div>
-
-<div>
-	<ul>
-		<li><%= radio_button_tag 'mobiliarios', 'none', false, onclick: "desaparece_mobiliarios();" %><%= label_tag "None" %></li>
-		<li><%= radio_button_tag 'mobiliarios', '1', true, onclick: "cambia_mobiliario();", data: {src: "#{asset_path('mobiliarios/Mobiliario1.png')}"} %><%= label_tag "Mobiliario1" %></li>
-	</ul>
-</div>
-
-<div>
-	<ul>
-		<li><%= radio_button_tag 'peatones', 'none', false, onclick: "desaparece_peatones();" %><%= label_tag "None" %></li>
-		<li><%= radio_button_tag 'peatones', '1', true, onclick: "cambia_peaton();", data: {src: "#{asset_path('peatones/Peatones1.png')}"} %><%= label_tag "Peaton1" %></li>
-	</ul>
-</div>
-
 <script>
-	function desaparece_calles(){
+	$(".boton-desaparece").click(function (event) {
+		target = this.getAttribute('data-target');
+
+		$(".boton-"+target).removeClass('activado');
+		$(this).addClass("activado");
 		//alert("desaparece calles");
-		document.getElementById('div-calles').style.display = "none";
-	}
+		document.getElementById("div-"+target).style.display = "none";
+	});
 
-	function desaparece_arboles(){
-		//alert("desaparece arboles");
-		document.getElementById('div-arboles').style.display = "none";
-	}
+	$('.boton-arboles').click(function (event) {
+		var arbol = this.getAttribute('data-src');
 
-	function desaparece_banquetas(){
-		//alert("desaparece banquetas");
-		document.getElementById('div-banquetas').style.display = "none";
-	}
-
-	function desaparece_iluminaciones(){
-		//alert("desaparece iluminaciones");
-		document.getElementById('div-iluminaciones').style.display = "none";
-	}
-
-	function desaparece_mobiliarios(){
-		//alert("desaparece mobiliarios");
-		document.getElementById('div-mobiliarios').style.display = "none";
-	}
-
-	function desaparece_peatones(){
-		//alert("desaparece peatones");
-		document.getElementById('div-peatones').style.display = "none";
-	}
-
-	function cambia_arbol(){
-		var arbol = jQuery( 'input[name=arboles]:checked' ).data("src");
+		$('#arboles-none').removeClass('activado');
+		$('.boton-arboles').removeClass('activado');
+		$(this).addClass("activado");
 
 		document.getElementById('div-arboles').style.display = "block";
 		document.getElementById('imagen-arboles').src = arbol;
-	}
+		event.preventDefault(); // Prevent link from following its href
+	});
 
-	function cambia_calle(){
-		var calle = jQuery( 'input[name=calles]:checked' ).data("src");
+	$('.boton-banquetas').click(function (event) {
+		var banqueta = this.getAttribute('data-src');
 
-		document.getElementById('div-calles').style.display = "block";
-		document.getElementById('imagen-calles').src = calle;
-	}
-
-	function cambia_banqueta(){
-		var banqueta = jQuery( 'input[name=banquetas]:checked' ).data("src");
+		$('#banquetas-none').removeClass('activado');
+		$('.boton-banquetas').removeClass('activado');
+		$(this).addClass("activado");
 
 		document.getElementById('div-banquetas').style.display = "block";
 		document.getElementById('imagen-banquetas').src = banqueta;
-	}
+		event.preventDefault(); // Prevent link from following its href
+	});
 
-	function cambia_iluminacion(){
-		var iluminacion = jQuery( 'input[name=iluminaciones]:checked' ).data("src");
+	$('.boton-calles').click(function (event) {
+		var calle = this.getAttribute('data-src');
+
+		$('#calles-none').removeClass('activado');
+		$('.boton-calles').removeClass('activado');
+		$(this).addClass("activado");
+
+		document.getElementById('div-calles').style.display = "block";
+		document.getElementById('imagen-calles').src = calle;
+		event.preventDefault(); // Prevent link from following its href
+	});
+
+	$('.boton-iluminaciones').click(function (event) {
+		var iluminacion = this.getAttribute('data-src');
+
+		$('#iluminaciones-none').removeClass('activado');
+		$('.boton-iluminaciones').removeClass('activado');
+		$(this).addClass("activado");
 
 		document.getElementById('div-iluminaciones').style.display = "block";
 		document.getElementById('imagen-iluminaciones').src = iluminacion;
-	}
+		event.preventDefault(); // Prevent link from following its href
+	});
 
-	function cambia_mobiliario(){
-		var mobiliario = jQuery( 'input[name=mobiliarios]:checked' ).data("src");
+	$('.boton-mobiliarios').click(function (event) {
+		var mobiliario = this.getAttribute('data-src');
+
+		$('#mobiliarios-none').removeClass('activado');
+		$('.boton-mobiliarios').removeClass('activado');
+		$(this).addClass("activado");
 
 		document.getElementById('div-mobiliarios').style.display = "block";
 		document.getElementById('imagen-mobiliarios').src = mobiliario;
-	}
+		event.preventDefault(); // Prevent link from following its href
+	});
 
-	function cambia_peaton(){
-		var peaton = jQuery( 'input[name=peatones]:checked' ).data("src");
+	$('.boton-peatones').click(function (event) {
+		var peaton = this.getAttribute('data-src');
+
+		$('#peatones-none').removeClass('activado');
+		$('.boton-peatones').removeClass('activado');
+		$(this).addClass("activado");
 
 		document.getElementById('div-peatones').style.display = "block";
 		document.getElementById('imagen-peatones').src = peaton;
-	}
+		event.preventDefault(); // Prevent link from following its href
+	});
 </script>
