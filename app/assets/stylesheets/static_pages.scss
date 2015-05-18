@@ -1,6 +1,129 @@
+$icon-height: 55px;
+
+
+.flag {
+	background-size: $icon-height $icon-height;
+	height: $icon-height;
+	width: $icon-height;
+	display: inline-block;
+}
+
+.arbol {
+	background-image: image-url('arbol.png');
+	&:hover {
+		background-image: image-url('arbol-active.png');
+	}
+	&:focus {
+		background-image: image-url('arbol-active.png');
+		background-color: transparent!important;
+	}
+}
+
+.pavimento {
+	background-image: image-url('pavimento.png');
+	&:hover {
+		background-image: image-url('pavimento-active.png');
+	}
+	&:focus {
+		background-image: image-url('pavimento-active.png');
+		background-color: transparent!important;
+	}
+}
+
+.mobiliario {
+	background-image: image-url('mobiliario.png');
+	&:hover {
+		background-image: image-url('mobiliario-active.png');
+	}
+	&:focus {
+		background-image: image-url('mobiliario-active.png');
+		background-color: transparent!important;
+	}
+}
+
+.iluminacion {
+	background-image: image-url('iluminacion.png');
+	&:hover {
+		background-image: image-url('iluminacion-active.png');
+	}
+	&:focus {
+		background-image: image-url('iluminacion-active.png');
+		background-color: transparent!important;
+	}
+}
+
+.edificios {
+	background-image: image-url('edificios.png');
+	&:hover {
+		background-image: image-url('edificios-active.png');
+	}
+	&:focus {
+		background-image: image-url('edificios-active.png');
+		background-color: transparent!important;
+	}
+}
+
+.peaton {
+	background-image: image-url('peaton.png');
+	&:hover {
+		background-image: image-url('peaton-active.png');
+	}
+	&:focus {
+		background-image: image-url('peaton-active.png');
+		background-color: transparent!important;
+	}
+}
+
+
+/* botones dropdown */
+
+.btn-calles {
+	padding: 5px;
+	font-size: 12px;
+}
+
+.boton-arboles {
+	padding: 5px;
+	font-size: 12px;
+}
+
+.boton-banquetas {
+	padding: 5px;
+	font-size: 12px;
+}
+
+.boton-mobiliarios {
+	padding: 5px;
+	font-size: 12px;
+}
+
+.boton-calles {
+	padding: 5px;
+	font-size: 12px;
+}
+
+.boton-iluminaciones {
+	padding: 5px;
+	font-size: 12px;
+}
+
+.boton-peatones {
+	padding: 5px;
+	font-size: 12px;
+}
+
+.dropdown-menu {
+	left: -160px !important;
+	top: 0% !important;
+}
+
+
+
 body {
 	font-family: 'Oswald', sans-serif !important;
 	color:black !important;
+	background-image: image-url('');
+	overflow: hidden;
 }
 
 .estilo-navbar {
@@ -30,12 +153,12 @@ li {
 	}
 
 	.link-menuprincipal:hover {
-		color: #5fbf99;
+		color: #d6df23;
 		text-decoration: none;
 	}
 
 	.link-menuprincipal:active {
-		color: #5fbf99;
+		color: #d6df23;
 		text-decoration: none;
 	}
 
@@ -51,6 +174,7 @@ li {
 		display: inline-block;
 		height: 100%;
 		padding: 1.25em;
+		background-color: transparent !important;
 	}
 
 	.link-menuprincipal {
@@ -58,17 +182,17 @@ li {
 	}
 
 	.link-menuprincipal:hover {
-		color: #5fbf99;
+		color: #d6df23;
 		text-decoration: none;
 	}
 
 	.link-menuprincipal:active {
-		color: #5fbf99;
+		color: #d6df23;
 		text-decoration: none;
 	}
 
 	.link-menuprincipal:focus {
-		color: #5fbf99;
+		color: #d6df23;
 		text-decoration: none;
 	}
 	

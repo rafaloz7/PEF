@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Entrega PEF</title>
+  <title>LAB Urbano</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+  <%= favicon_link_tag '/favicon.ico' %>
+  <%= favicon_link_tag '/favicon.ico', rel: 'apple-touch-icon' %>
 </head>
 <body>
+
+<div>
+	<nav class = "navbar-fixed-top estilo-navbar" role = "navigation">
+		<div class = "">
+			
+			<div class = "navbar-header">
+				
+				<button type="button" class="navbar-toggle buttontoggle col-lg-12 col-md-12 col-sm-12" data-toggle="collapse" data-target="">
+        			<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+      			</button>
+			
+				<div class = "navbar-brand">
+					<a class = "link-menuprincipal" href="/">LABORATORIO URBANO</a>
+				</div>
+			</div>
+
+
+			<div class = "navbar-principal-collapsed collapse navbar-collapse" id = "menubuttons">
+				<ul class = "navbar-right" style = "padding-right: 15px;">
+					<li class = "botonprincipal"><a class = "link-menuprincipal" data-scroll href="/pagina1">INTRODUCCIÓN</a></li>
+					<li class = "botonprincipal"><a class = "link-menuprincipal" data-scroll href="/pagina2">CASOS DE ESTUDIO</a></li>
+					<!--<li class = "botonprincipal"><a class = "link-menuprincipal" data-scroll href="/pagina3">CATÁLOGO</a></li>
+					<li class = "botonprincipal"><a class = "link-menuprincipal" data-scroll href="/pagina4">EQUIPO</a></li>-->
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+</div>
 
 <%= yield %>
 
